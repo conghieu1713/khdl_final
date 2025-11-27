@@ -1,0 +1,56 @@
+---
+title: Ứng dụng Python xây dựng các chiến lược giao dịch chứng khoán
+lang: vi
+authors: 
+  - name: "**Nguyễn Công Hiếu (524102110660)**"
+    email: hieunguyen.524102110660@st.ueh.edu.vn
+instructors: PGS.TS. Phùng Đức Nam | TS. Trần Hoài Nam
+faculty: Khoa Tài Chính - Trường Kinh Doanh UEH
+subject: Khoa học dữ liệu tài chính
+abstract: "Bài tiểu luận trình bày các chiến lược giao dịch từ cơ bản đến phức tạp như: chiến lược giao dịch dựa trên phân tích kỹ thuật như MACD, SMA; chiến lược giao dịch dựa trên bước đi ngẫu nhiên, chiến lược giao dịch sử dụng thuật toán mạng thần kinh nhân tạo."
+abstract-title: Tóm tắt
+date: today
+date-format: "[Tháng] MM [Năm] YYYY"
+number-sections: true
+toc: true
+toc-title: Mục lục
+format:
+  SOF_template-typst: default
+bibliography: ref.bib
+---
+
+# Một số đoạn code mẫu
+
+Đây là đoạn code mẫu thứ nhất, hiển thị cả cell code và cell kết quả
+
+```{python}
+print('Hello World')
+```
+
+Trong trường hợp chỉ cần hiện cell code mà không cần hiện cell kết quả
+```{python}
+#| eval: false
+import numpy as np
+import pandas as pd
+import yfinance as yf
+```
+
+Trong trường hợp chỉ cần hiện cell kết quả mà không cần hiện cell code
+```{python}
+#| echo: false
+x = 5
+y = 8
+print('Sum of x and y is', x+y)
+```
+
+
+# Trích dẫn
+
+Có hai kiểu trích dẫn có thể được sử dụng, cách đầu tiên là @myers2007earnings. Một cách khác được sử dụng là [@myers2007earnings]
+
+
+# Thông tin thêm
+
+You can learn more about creating custom Typst templates here: 
+
+<https://quarto.org/docs/prerelease/1.4/typst.html#custom-formats>
