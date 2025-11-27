@@ -23,7 +23,9 @@ bibliography: ref.bib
 
 ## Lý do chọn chủ đề
 
-Đây là phần lý cho chọn chủ đề, độ dài yêu cầu khoảng 300-500 từ. Coming soon...
+Vỡ nợ là hiện tượng một doanh nghiệp không thể hoàn thành được các nghĩa vụ nợ của bản thân. Trên thực tế, nhà phân tích quan tâm đến rủi ro vỡ nợ bởi nhiều nguyên nhân. Thứ nhất, rủi ro vỡ nợ ảnh hưởng đến trực tiếp đến định giá thông qua phần bù rủi ro vỡ nợ hoặc chênh lệch tín dụng [@reilly2011, @bodie2018, @hull2023]. Thứ hai, rủi ro vỡ nợ ảnh hưởng đến giá trị của cổ phiếu, tức là sự sống còn của cổ đông [@ross2019, @brealey2019]. Bên cạnh đó, rủi ro vỡ nợ còn là chỉ báo cho sức khỏe dòng tiền của doanh nghiệp, hoặc là một dấu hiệu dự báo cho các sự kiện kinh tế vĩ mô trong tương lai (chẳng hạn như các cuộc khủng hoảng kinh tế). 
+
+Trên thực tế, có nhiều cách để đánh giá nguy cơ vỡ nợ của một doanh nghiệp, ví dụ như ước lượng dựa trên xếp hạng tín dụng của các tổ chức xếp hạng như Standard and Poors, Moodys, Fitch; sử dụng tỷ lệ vỡ nợ (hazard rate), ước lượng dựa trên chênh lệch tính dụng (credit speards), sử dụng định giá cổ phiếu dựa trên mô hình của @merton1974... Trong tiểu luận này, tác giả sử dụng hồi quy logistic dựa trên nhị phân hóa chỉ số Altman's $Z$-Score để dự báo nguy cơ vỡ nợ của doanh nghiệp. Mục tiêu của tiểu luận này là tìm kiếm một phương pháp khả thi để dự báo nguy cơ vỡ nợ, đồng thời đề xuất các hướng phát triển tiếp theo trong việc xác định mô hình dự báo vỡ nợ nói riêng và dự báo các hiện tượng tài chính nói chung.
 
 ## Mô tả bài toán
 
@@ -41,7 +43,7 @@ $$
 \Pr(Y=1|X) = \frac{1}{1+e^{-\lambda X}}
 $$
 
-Trong đó $\lambda X$ là một tổ hợp tuyến tính của $k$ biến độc lập $X_1, X_2,...X,_k$
+Trong đó $\lambda X$ là một tổ hợp tuyến tính của $k$ biến độc lập $X_1, X_2,...,X_k$
 
 $$
 \lambda X = \lambda_0 +\lambda_1 X_1 + \lambda_2 X_2 + ... + \lambda_k X_k
@@ -400,10 +402,12 @@ Kết quả huấn luyện trên chỉ ra rằng hồi quy logistic là một ph
 
 ## Kết quả kiểm tra đạo văn
 
-Lorem ipsum
+![Kết quả kiểm tra đạo văn](img/textsimilarity.png)
 
 ## Liên kết ngoài
 
-Lorem ipsum
+Repository lưu trữ dự án được truy cập qua [liên kết này](https://github.com/conghieu1713/khdl_final)
+
+Kết quả kiểm tra đạo văn đầy đủ được truy cập qua [liên kết này](https://drive.google.com/drive/folders/15al-Uid2tFlIF1iu8dRZxzGPDzfmlbbs?usp=drive_link).
 
 {{< pagebreak >}}
